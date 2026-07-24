@@ -1,209 +1,191 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Гранд Ритуал — ритуальные услуги</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Гранд — ритуальные услуги и принадлежности в Иркутске и Иркутской области." name="description"/>
+<title>Гранд — ритуальные услуги</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
-<body>
-
-  <header class="header">
-    <div class="container header-inner">
-      <div class="logo">Гранд Ритуал</div>
-
-      <button class="menu-btn" id="menuBtn">☰</button>
-
-      <nav class="nav" id="nav">
-        <a href="#about">О нас</a>
-        <a href="#services">Услуги</a>
-        <a href="#prices">Цены</a>
-        <a href="#address">Адрес</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="subtitle">Ритуальные услуги</p>
-        <h1>Гранд Ритуал</h1>
-        <p class="hero-text">
-          Организация похорон и помощь в трудный момент. Работаем спокойно,
-          уважительно и с вниманием к каждой семье.
+<body class="home-page">
+<header class="header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Гранд</a>
+<button aria-label="Открыть меню" class="menu-btn" id="menuBtn">☰</button>
+<nav class="nav" id="nav">
+<a href="#about">О нас</a>
+<a href="services.html">Услуги</a>
+<a href="catalog.html">Каталог</a>
+<a href="#process">Как мы работаем</a>
+<a href="#contacts">Адреса</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="container hero-layout">
+<div class="hero-panel">
+<div class="hero-kicker">
+<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19c5-1 8-4 9-9 2 3 2 6 0 9M8 15c-2-3-2-6 0-9 3 2 5 5 5 9M14 12c2-3 4-4 7-4-1 4-3 6-7 7"/></svg>
+<span>Ритуальные услуги</span>
+</div>
+<h1 id="hero-title">Гранд</h1>
+<span class="hero-divider" aria-hidden="true"></span>
+<p class="hero-text">
+        Помогаем организовать прощание, подобрать необходимые услуги
+        и ритуальные принадлежности.
+      </p>
+<div class="hero-buttons">
+<a class="btn btn-gold hero-btn" href="#contacts">
+<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8c1.6 3.1 3.5 5 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.7 3.8.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.7c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.6.7 3.8.1.4 0 .8-.2 1.1z"/></svg>
+<span>Связаться</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-compact reveal" id="about">
+<div class="container">
+<div class="section-heading-row">
+<div>
+<p class="eyebrow">О нас</p>
+<h2>Помощь без лишней сложности</h2>
+</div>
+<p class="about-summary">
+          Берём на себя организационные вопросы и подбираем решение
+          с учётом пожеланий семьи и бюджета.
         </p>
-        <div class="hero-buttons">
-          <a href="#contacts" class="btn btn-gold">Связаться</a>
-          <a href="#services" class="btn btn-outline">Посмотреть услуги</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section reveal">
-      <div class="container">
-        <h2>О нас</h2>
-        <p>
-          «Гранд Ритуал» — салон ритуальных услуг, который помогает с организацией
-          похорон, оформлением необходимых принадлежностей и подбором товаров для
-          церемонии прощания.
-        </p>
-        <p>
-          Наша задача — взять на себя организационные вопросы и предоставить
-          клиентам понятную информацию об услугах, товарах и стоимости.
-        </p>
-      </div>
-    </section>
-
-    <section id="services" class="section dark-section reveal">
-      <div class="container">
-        <h2>Услуги</h2>
-
-        <div class="cards">
-          <div class="card">
-            <h3>Организация похорон</h3>
-            <p>Помощь в подготовке церемонии, подборе товаров и согласовании этапов.</p>
-          </div>
-
-          <div class="card">
-            <h3>Ритуальные принадлежности</h3>
-            <p>Гробы, венки, кресты, таблички, покрывала, ленты и другие товары.</p>
-          </div>
-
-          <div class="card">
-            <h3>Транспортные услуги</h3>
-            <p>Организация перевозки и сопровождения в день церемонии.</p>
-          </div>
-
-          <div class="card">
-            <h3>Оформление документов</h3>
-            <p>Консультация по порядку оформления необходимых документов.</p>
-          </div>
-
-          <div class="card">
-            <h3>Памятники и благоустройство</h3>
-            <p>Подбор памятников, оград, плитки и работ по благоустройству.</p>
-          </div>
-
-          <div class="card">
-            <h3>Консультация</h3>
-            <p>Помощь в выборе услуг и товаров с учётом ситуации и бюджета.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="prices" class="section reveal">
-      <div class="container">
-        <h2>Цены</h2>
-        <p class="note">
-          Точная стоимость зависит от выбранных товаров, услуг и объёма организации.
-          Ниже указаны примерные позиции для ознакомления.
-        </p>
-
-        <div class="price-list">
-          <div class="price-item">
-            <span>Консультация</span>
-            <strong>бесплатно</strong>
-          </div>
-          <div class="price-item">
-            <span>Ритуальные принадлежности</span>
-            <strong>от 3 000 ₽</strong>
-          </div>
-          <div class="price-item">
-            <span>Организация церемонии</span>
-            <strong>от 15 000 ₽</strong>
-          </div>
-          <div class="price-item">
-            <span>Транспортные услуги</span>
-            <strong>по согласованию</strong>
-          </div>
-          <div class="price-item">
-            <span>Памятники и благоустройство</span>
-            <strong>по расчёту</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section reveal">
-      <div class="container">
-        <h2>Частые вопросы</h2>
-
-        <div class="faq">
-          <div class="faq-item">
-            <button class="faq-question">Можно ли получить консультацию заранее?</button>
-            <div class="faq-answer">
-              <p>Да, можно связаться с нами по телефону или в Telegram и уточнить основные вопросы.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">Можно ли узнать примерную стоимость?</button>
-            <div class="faq-answer">
-              <p>Да, стоимость зависит от выбранных товаров и услуг. Предварительный расчёт можно сделать после консультации.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">Есть ли помощь с подбором принадлежностей?</button>
-            <div class="faq-answer">
-              <p>Да, мы помогаем подобрать необходимые товары для церемонии с учётом пожеланий семьи.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="address" class="section reveal">
-      <div class="container">
-        <h2>Адрес</h2>
-        <p>
-          Адрес салона: <strong>г. Иркутск, ул. Название улицы, 1</strong>
-        </p>
-        <p>
-          График работы: ежедневно с 09:00 до 18:00
-        </p>
-
-        <div class="map-placeholder">
-          Здесь можно разместить карту или ссылку на 2ГИС / Яндекс Карты
-        </div>
-      </div>
-    </section>
-
-    <section id="contacts" class="section contacts-section reveal">
-      <div class="container">
-        <h2>Контакты</h2>
-        <p>Свяжитесь с нами для консультации и уточнения информации.</p>
-
-        <div class="contacts">
-          <div>
-            <h3>Телефон</h3>
-            <p><a href="tel:+70000000000">+7 000 000-00-00</a></p>
-          </div>
-
-          <div>
-            <h3>Telegram</h3>
-            <p><a href="https://t.me/username">@username</a></p>
-          </div>
-
-          <div>
-            <h3>Адрес</h3>
-            <p>г. Иркутск, ул. Название улицы, 1</p>
-          </div>
-        </div>
-
-        <a href="tel:+70000000000" class="btn btn-gold contact-btn">Позвонить</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Гранд Ритуал. Ритуальные услуги.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+</div>
+<div class="about-principles" aria-label="Наш подход к работе">
+<div class="about-principle">
+<span class="principle-number">1</span>
+<div>
+<strong>Помощь на всех этапах</strong>
+<p>Сопровождаем семью от первого обращения до завершения церемонии.</p>
+</div>
+</div>
+<div class="about-principle">
+<span class="principle-number">2</span>
+<div>
+<strong>Понятный расчёт</strong>
+<p>Заранее объясняем состав услуг и связанные с ними расходы.</p>
+</div>
+</div>
+<div class="about-principle">
+<span class="principle-number">3</span>
+<div>
+<strong>Подбор по бюджету</strong>
+<p>Предлагаем подходящие варианты без необязательных позиций.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section dark-section reveal" id="services">
+<div class="container">
+<p class="eyebrow">Основное</p>
+<h2>Услуги агентства</h2>
+<div class="service-price-grid service-summary-grid">
+<article class="service-price-card compact-card">
+<span class="service-price-label">Выезд</span>
+<h3>Выезд ритуального агента</h3>
+<p>Консультация и оформление заказа по адресу.</p>
+<strong>Стоимость уточняется</strong>
+</article>
+<article class="service-price-card compact-card">
+<span class="service-price-label">Организация</span>
+<h3>Организация похорон</h3>
+<p>Подготовка церемонии и сопровождение семьи.</p>
+<strong>Стоимость уточняется</strong>
+</article>
+<article class="service-price-card compact-card">
+<span class="service-price-label">Транспорт</span>
+<h3>Ритуальный транспорт</h3>
+<p>Катафальный транспорт и сопровождение церемонии.</p>
+<strong>Стоимость уточняется</strong>
+</article>
+<article class="service-price-card compact-card">
+<span class="service-price-label">Перевозка</span>
+<h3>Транспортировка тела</h3>
+<p>Перевозка по согласованному маршруту.</p>
+<strong>Стоимость уточняется</strong>
+</article>
+</div>
+<div class="secondary-services">
+<span>Также помогаем с документами</span>
+<span>Благоустройством захоронений</span>
+<span>Подбором товаров и принадлежностей</span>
+</div>
+<div class="section-actions"><a class="btn btn-gold" href="services.html">Посмотреть все услуги</a><a class="btn btn-outline" href="catalog.html">Каталог товаров</a></div>
+</div>
+</section>
+<section class="section section-compact reveal" id="process">
+<div class="container">
+<p class="eyebrow">Порядок работы</p>
+<h2>Как мы работаем</h2>
+<div class="steps-grid compact-steps">
+<article class="step-card">
+<span class="step-number">1 этап</span>
+<h3>Консультация</h3>
+<p>Уточняем ситуацию и необходимые услуги.</p>
+</article>
+<article class="step-card">
+<span class="step-number">2 этап</span>
+<h3>Подбор</h3>
+<p>Выбираем товары, транспорт и дополнительные работы.</p>
+</article>
+<article class="step-card">
+<span class="step-number">3 этап</span>
+<h3>Расчёт</h3>
+<p>Согласовываем предварительную стоимость.</p>
+</article>
+<article class="step-card">
+<span class="step-number">4 этап</span>
+<h3>Организация</h3>
+<p>Выполняем согласованные услуги.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section dark-section reveal" id="contacts">
+<div class="container">
+<p class="eyebrow">Где нас найти</p>
+<h2>Наши адреса</h2>
+<article class="addresses-card">
+<div class="address-row">
+<div>
+<span class="address-label">Иркутский район</span>
+<h3>Култукский тракт, 1/6</h3>
+<p>Ритуальная служба и прощальный зал.</p>
+</div>
+<a href="https://2gis.ru/irkutsk/firm/70000001036709343" rel="noopener" target="_blank">Открыть в 2ГИС</a>
+</div>
+<div class="address-row">
+<div>
+<span class="address-label">рп. Маркова</span>
+<h3>Промышленная улица, 16</h3>
+<p>Филиал ритуальной службы.</p>
+</div>
+<a href="https://2gis.ru/irkutsk/firm/70000001052467389" rel="noopener" target="_blank">Открыть в 2ГИС</a>
+</div>
+<div class="address-row">
+<div>
+<span class="address-label">Шелехов</span>
+<h3>Култукский тракт, 28г</h3>
+<p>2 этаж. Ритуальная служба и товары.</p>
+</div>
+<a href="https://2gis.ru/shelekhov/firm/70000001069131465" rel="noopener" target="_blank">Открыть в 2ГИС</a>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<p>© 2026 Гранд. Ритуальные услуги.</p>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
