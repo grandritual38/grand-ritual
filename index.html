@@ -11,7 +11,7 @@
 <body class="home-page">
 <header class="header">
 <div class="container header-inner">
-<a class="logo" href="index.html">Гранд</a>
+<a aria-label="Гранд — главная" class="logo brand-logo" href="index.html"><img alt="Гранд" class="brand-logo-image" src="images/branding/grand-logo.png"/></a>
 <button aria-label="Открыть меню" class="menu-btn" id="menuBtn">☰</button>
 <nav class="nav" id="nav">
 <a href="#about">О нас</a>
@@ -23,22 +23,22 @@
 </div>
 </header>
 <main>
-<section class="hero" aria-labelledby="hero-title">
+<section aria-labelledby="hero-title" class="hero">
 <div class="container hero-layout">
 <div class="hero-panel">
 <div class="hero-kicker">
-<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19c5-1 8-4 9-9 2 3 2 6 0 9M8 15c-2-3-2-6 0-9 3 2 5 5 5 9M14 12c2-3 4-4 7-4-1 4-3 6-7 7"/></svg>
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 19c5-1 8-4 9-9 2 3 2 6 0 9M8 15c-2-3-2-6 0-9 3 2 5 5 5 9M14 12c2-3 4-4 7-4-1 4-3 6-7 7"></path></svg>
 <span>Ритуальные услуги</span>
 </div>
 <h1 id="hero-title">Гранд</h1>
-<span class="hero-divider" aria-hidden="true"></span>
+<span aria-hidden="true" class="hero-divider"></span>
 <p class="hero-text">
         Помогаем организовать прощание, подобрать необходимые услуги
         и ритуальные принадлежности.
       </p>
 <div class="hero-buttons">
 <a class="btn btn-gold hero-btn" href="#contacts">
-<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8c1.6 3.1 3.5 5 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.7 3.8.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.7c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.6.7 3.8.1.4 0 .8-.2 1.1z"/></svg>
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6.6 10.8c1.6 3.1 3.5 5 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.7 3.8.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.7c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.6.7 3.8.1.4 0 .8-.2 1.1z"></path></svg>
 <span>Связаться</span>
 </a>
 </div>
@@ -57,7 +57,7 @@
           с учётом пожеланий семьи и бюджета.
         </p>
 </div>
-<div class="about-principles" aria-label="Наш подход к работе">
+<div aria-label="Наш подход к работе" class="about-principles">
 <div class="about-principle">
 <span class="principle-number">1</span>
 <div>
@@ -81,42 +81,45 @@
 </div>
 </div>
 </div>
+</section><section class="section dark-section reveal" id="advantages">
+<div class="container">
+<p class="eyebrow">Наш подход</p>
+<h2>Почему обращаются в «Гранд»</h2>
+<div class="advantages-grid">
+<article class="advantage-card"><h3>Организация в одном месте</h3><p>Помогаем согласовать услуги, ритуальные товары, транспорт и организационные вопросы без необходимости собирать всё по отдельности.</p></article>
+<article class="advantage-card"><h3>Понятный порядок действий</h3><p>Объясняем последовательность действий и заранее согласовываем выбранные услуги и принадлежности.</p></article>
+<article class="advantage-card"><h3>Работа с разным бюджетом</h3><p>В каталоге можно сравнить варианты и подобрать необходимое без лишних позиций.</p></article>
+<article class="advantage-card"><h3>Иркутск и ближайшие районы</h3><p>На сайте указаны филиалы в Иркутском районе, Маркова и Шелехове, чтобы выбрать удобное место обращения.</p></article>
+</div>
+</div>
 </section>
 <section class="section dark-section reveal" id="services">
 <div class="container">
 <p class="eyebrow">Основное</p>
 <h2>Услуги агентства</h2>
 <div class="service-price-grid service-summary-grid">
-<article class="service-price-card compact-card">
+<a aria-label="Подробнее: Выезд ритуального агента" class="service-price-card compact-card home-service-link" href="service-agent.html">
 <span class="service-price-label">Выезд</span>
 <h3>Выезд ритуального агента</h3>
-<p>Консультация и оформление заказа по адресу.</p>
-<strong>Стоимость уточняется</strong>
-</article>
-<article class="service-price-card compact-card">
+<p>Консультация, оформление заказа и согласование услуг по адресу.</p>
+<span class="service-more">Подробнее →</span></a>
+<a aria-label="Подробнее: Организация захоронения" class="service-price-card compact-card home-service-link" href="burial.html">
 <span class="service-price-label">Организация</span>
-<h3>Организация похорон</h3>
-<p>Подготовка церемонии и сопровождение семьи.</p>
-<strong>Стоимость уточняется</strong>
-</article>
-<article class="service-price-card compact-card">
+<h3>Организация захоронения</h3>
+<p>Согласование времени, транспорта и работ на месте захоронения.</p>
+<span class="service-more">Подробнее →</span></a>
+<a aria-label="Подробнее: Ритуальный транспорт" class="service-price-card compact-card home-service-link" href="transportation.html">
 <span class="service-price-label">Транспорт</span>
 <h3>Ритуальный транспорт</h3>
-<p>Катафальный транспорт и сопровождение церемонии.</p>
-<strong>Стоимость уточняется</strong>
-</article>
-<article class="service-price-card compact-card">
-<span class="service-price-label">Перевозка</span>
-<h3>Транспортировка тела</h3>
-<p>Перевозка по согласованному маршруту.</p>
-<strong>Стоимость уточняется</strong>
-</article>
+<p>Катафальный транспорт для церемонии и поездок по согласованному маршруту.</p>
+<span class="service-more">Подробнее →</span></a>
+<a aria-label="Подробнее: Оформление документов" class="service-price-card compact-card home-service-link" href="service-documents.html">
+<span class="service-price-label">Документы</span>
+<h3>Оформление документов</h3>
+<p>Помощь с подготовкой и оформлением необходимых документов.</p>
+<span class="service-more">Подробнее →</span></a>
 </div>
-<div class="secondary-services">
-<span>Также помогаем с документами</span>
-<span>Благоустройством захоронений</span>
-<span>Подбором товаров и принадлежностей</span>
-</div>
+<div class="secondary-services"><span>Подготовка усопшего к прощанию</span><span>Благоустройство и установка</span><span>Уборка и уход за могилами</span></div>
 <div class="section-actions"><a class="btn btn-gold" href="services.html">Посмотреть все услуги</a><a class="btn btn-outline" href="catalog.html">Каталог товаров</a></div>
 </div>
 </section>
@@ -148,10 +151,21 @@
 </div>
 </div>
 </section>
-<section class="section dark-section reveal" id="contacts">
+<section class="section dark-section reveal" id="cemeteries">
+<div class="container">
+<div class="section-heading-row">
+<div><p class="eyebrow">Кладбища</p><h2>Где работаем</h2></div>
+<p class="about-summary">Организуем захоронение и связанные работы на кладбищах Иркутска, Иркутского района и Шелехова при наличии возможности захоронения или подзахоронения.</p>
+</div>
+<ul class="cemetery-grid cemetery-grid-home">
+<li>Ново-Ленинское</li><li>Максимовское</li><li>Еланское</li><li>Смоленское</li><li>Марковское</li><li>Маратовское (Радищево)</li><li>Александровское</li><li>Пивовариха</li><li>Шелеховское</li>
+</ul>
+<div class="section-actions"><a class="btn btn-outline" href="burial.html">Подробнее об организации захоронения</a></div>
+</div>
+</section><section class="section dark-section reveal" id="contacts">
 <div class="container">
 <p class="eyebrow">Где нас найти</p>
-<h2>Наши адреса</h2>
+<h2>Наши адреса</h2><div class="contacts-callout"><div><span class="address-label">Телефоны</span><h3>Связаться с нами</h3><p>Позвоните по одному из номеров:</p></div><div class="contacts-phone-links"><a href="tel:430440">430-440</a><a href="tel:654200">654-200</a></div></div>
 <article class="addresses-card">
 <div class="address-row">
 <div>
@@ -181,9 +195,25 @@
 </div>
 </section>
 </main>
-<footer class="footer">
-<div class="container">
-<p>© 2026 Гранд. Ритуальные услуги.</p>
+<footer class="footer legal-footer">
+<div class="container legal-footer-inner">
+<div class="legal-footer-top">
+<div class="legal-footer-brand">
+<strong>Городская ритуальная служба «Гранд»</strong>
+<div class="legal-footer-phones">
+<a href="tel:430440">430-440</a>
+<a href="tel:654200">654-200</a>
+</div>
+</div>
+<p class="legal-footer-note">Информация на сайте носит справочный характер. Актуальные цены, наличие товаров и условия оказания услуг уточняйте по указанным телефонам.</p>
+<p class="legal-footer-note">Права на фотографии и изображения принадлежат их правообладателям. Материалы используются на законных основаниях.</p>
+</div>
+<nav aria-label="Юридическая информация" class="legal-footer-links">
+<a href="privacy.html">Политика обработки персональных данных</a>
+<a href="consent.html">Согласие на обработку персональных данных</a>
+<a href="requisites.html">Реквизиты</a>
+</nav>
+<div class="legal-footer-bottom">© 2026 Гранд. Ритуальные услуги.</div>
 </div>
 </footer>
 <script src="script.js"></script>
